@@ -1,14 +1,19 @@
 import { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import Users from './Users/Users';
-import Loader from './Loader/Loader';
-import { getLoading } from '../redux/selectors';
+import { useDispatch } from 'react-redux';
 import * as operations from '../redux/operations';
+import { Route, Navigate, Routes } from 'react-router-dom';
+import Users from './Users/Users';
+import Home from './Home/Home';
 
 export default function Phonebook() {
-  const isLoading = useSelector(getLoading);
   const dispatch = useDispatch();
   useEffect(() => dispatch(operations.fetchUsers()), [dispatch]);
 
-  return <>{isLoading ? <Loader /> : <Users />}</>;
+  return (
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+      <Route exact path="/tweets" element={<Users />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
+  );
 }

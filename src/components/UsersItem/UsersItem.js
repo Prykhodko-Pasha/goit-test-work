@@ -1,10 +1,9 @@
 import { useDispatch } from 'react-redux';
-// import PropTypes from 'prop-types';
-import s from '../Users/Users.module.css';
-import goit_logo from '../../assets/goit_logo.svg';
-import card_picture from '../../assets/picture.png';
 import { useState } from 'react';
 import * as operations from '../../redux/operations';
+import goit_logo from '../../assets/goit_logo.svg';
+import card_picture from '../../assets/picture.png';
+import s from '../Users/Users.module.css';
 
 export default function UsersItem({ userData, followedUsers }) {
   const { id, user, tweets, followers, avatar } = userData;
@@ -63,9 +62,7 @@ export default function UsersItem({ userData, followedUsers }) {
       </p>
 
       <button
-        className={`${s.user_card__btn} ${
-          isFollowed && s.user_card__btn__followed
-        }`}
+        className={isFollowed ? s.user_card__btn__followed : s.user_card__btn}
         type="button"
         onClick={btnClickHandler}
       >
@@ -74,9 +71,3 @@ export default function UsersItem({ userData, followedUsers }) {
     </div>
   );
 }
-
-// UsersItem.propTypes = {
-//   id: PropTypes.string.isRequired,
-//   name: PropTypes.string.isRequired,
-//   phone: PropTypes.string.isRequired,
-// };

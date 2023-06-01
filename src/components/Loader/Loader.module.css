@@ -7,13 +7,14 @@
   position: relative;
   width: 80px;
   height: 80px;
+  margin: 35px auto;
 }
 .lds_default div {
   display: inline-block;
   position: absolute;
   left: 8px;
   width: 16px;
-  background: #474544;
+  background: #471CA9;
   animation: lds_default 0.8s cubic-bezier(0, 0.5, 0.5, 1) infinite;
 }
 .lds_default div:nth-child(1) {

@@ -1,0 +1,45 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    height: 80vh;
+}
+
+.home__title {
+    position: relative;
+    z-index: 10;
+    font-size: 80px;
+}
+
+.home__btn {
+    width: 196px;
+    height: 50px;
+    background-color: #AE7BE3;
+    box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+
+.home__btn:hover,
+.home__btn:focus {
+    background: #007bff;
+}
