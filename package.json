@@ -2,7 +2,7 @@
   "name": "goit-test-work",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://prykhodko-pasha.github.io/goit-test-work;",
+  "homepage": "https://prykhodko-pasha.github.io/goit-test-work",
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.2",
     "@testing-library/jest-dom": "^5.14.1",

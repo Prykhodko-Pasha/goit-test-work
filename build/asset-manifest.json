@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/goit-test-work;/static/css/main.ce1c143d.chunk.css",
-    "main.js": "/goit-test-work;/static/js/main.ee4ebffd.chunk.js",
-    "main.js.map": "/goit-test-work;/static/js/main.ee4ebffd.chunk.js.map",
-    "runtime-main.js": "/goit-test-work;/static/js/runtime-main.6d12572e.js",
-    "runtime-main.js.map": "/goit-test-work;/static/js/runtime-main.6d12572e.js.map",
-    "static/js/2.bafca4d5.chunk.js": "/goit-test-work;/static/js/2.bafca4d5.chunk.js",
-    "static/js/2.bafca4d5.chunk.js.map": "/goit-test-work;/static/js/2.bafca4d5.chunk.js.map",
-    "index.html": "/goit-test-work;/index.html",
-    "static/css/main.ce1c143d.chunk.css.map": "/goit-test-work;/static/css/main.ce1c143d.chunk.css.map",
-    "static/js/2.bafca4d5.chunk.js.LICENSE.txt": "/goit-test-work;/static/js/2.bafca4d5.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/goit-test-work;/static/media/bg.ed78cebb.jpg",
-    "static/media/goit_logo.e917114d.svg": "/goit-test-work;/static/media/goit_logo.e917114d.svg",
-    "static/media/picture.38ea3189.png": "/goit-test-work;/static/media/picture.38ea3189.png"
+    "main.css": "/goit-test-work/static/css/main.9334e0f9.chunk.css",
+    "main.js": "/goit-test-work/static/js/main.ee4ebffd.chunk.js",
+    "main.js.map": "/goit-test-work/static/js/main.ee4ebffd.chunk.js.map",
+    "runtime-main.js": "/goit-test-work/static/js/runtime-main.0a9bc1ce.js",
+    "runtime-main.js.map": "/goit-test-work/static/js/runtime-main.0a9bc1ce.js.map",
+    "static/js/2.bafca4d5.chunk.js": "/goit-test-work/static/js/2.bafca4d5.chunk.js",
+    "static/js/2.bafca4d5.chunk.js.map": "/goit-test-work/static/js/2.bafca4d5.chunk.js.map",
+    "index.html": "/goit-test-work/index.html",
+    "static/css/main.9334e0f9.chunk.css.map": "/goit-test-work/static/css/main.9334e0f9.chunk.css.map",
+    "static/js/2.bafca4d5.chunk.js.LICENSE.txt": "/goit-test-work/static/js/2.bafca4d5.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/goit-test-work/static/media/bg.ed78cebb.jpg",
+    "static/media/goit_logo.e917114d.svg": "/goit-test-work/static/media/goit_logo.e917114d.svg",
+    "static/media/picture.38ea3189.png": "/goit-test-work/static/media/picture.38ea3189.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.6d12572e.js",
+    "static/js/runtime-main.0a9bc1ce.js",
     "static/js/2.bafca4d5.chunk.js",
-    "static/css/main.ce1c143d.chunk.css",
+    "static/css/main.9334e0f9.chunk.css",
     "static/js/main.ee4ebffd.chunk.js"
   ]
 }
