@@ -55,10 +55,10 @@ export default function UsersItem({ userData, followedUsers }) {
       </div>
 
       <p className={`${s.user_card__info} ${s.user_card__tweets}`}>
-        {tweets.toLocaleString()} tweets
+        {tweets.toLocaleString('en-US')} tweets
       </p>
       <p className={`${s.user_card__info} ${s.user_card__followers}`}>
-        {followersCount.toLocaleString()} followers
+        {followersCount.toLocaleString('en-US')} followers
       </p>
 
       <button
