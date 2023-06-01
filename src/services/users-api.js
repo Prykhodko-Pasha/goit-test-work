@@ -8,6 +8,5 @@ export async function fetchUsersAPI() {
 }
 
 export async function updUserAPI(newData) {
-  const { data } = await axios.put(`/users/${newData.id}`, newData);
-  return data;
+  await axios.put(`/users/${newData.id}`, newData);
 }

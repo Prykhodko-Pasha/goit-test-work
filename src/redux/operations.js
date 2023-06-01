@@ -8,6 +8,5 @@ export const fetchUsers = createAsyncThunk(actions.fetchUsers, async () => {
 });
 
 export const updUser = createAsyncThunk(actions.updUser, async data => {
-  const contact = await updUserAPI(data);
-  return contact;
+  await updUserAPI(data);
 });

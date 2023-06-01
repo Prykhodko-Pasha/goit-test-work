@@ -4,13 +4,18 @@ import { fetchUsers, updUser } from './operations';
 
 const entities = createReducer([], {
   [fetchUsers.fulfilled]: (_, action) => action.payload,
-  [updUser.fulfilled]: (state, { payload }) => [...state, payload],
+  [updUser.fulfilled]: (_, action) => action.payload,
 });
 
-const isLoading = createReducer(false, {
+const isLoadingUsers = createReducer(false, {
   [fetchUsers.pending]: () => true,
   [fetchUsers.fulfilled]: () => false,
   [fetchUsers.rejected]: () => false,
+});
+const isUpdFollowers = createReducer(false, {
+  [updUser.pending]: () => true,
+  [updUser.fulfilled]: () => false,
+  [updUser.rejected]: () => false,
 });
 
 const error = createReducer(null, {
@@ -22,7 +27,7 @@ const error = createReducer(null, {
 
 export default combineReducers({
   entities,
-  isLoading,
-  // filter,
+  isLoadingUsers,
+  isUpdFollowers,
   error,
 });

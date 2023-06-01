@@ -1,51 +1,113 @@
-.wrapper,
 .users__list {
-  padding: 0 37.5px;
-  display: block;
-  font-size: 1em;
-  font-weight: 400;
-  letter-spacing: 1px;
-  line-height: 0.5;
-  text-transform: uppercase;
-}
-.wrapper {
-  padding-top: 37.5px;
-}
-.users__list {
-  padding-bottom: 37.5px;
-}
-
-.users__item {
+  padding: 38px 38px;
   display: flex;
-  justify-content: space-between;
-}
-.users__item:hover {
-  background-color: #f2f3eb;
-}
-
-.text {
-  padding-bottom: 37.5px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
 }
 
-.del__btn {
-  background: none;
-  border: solid 2px #e20000;
-  color: #e20000;
-  cursor: pointer;
-  font-size: 0.875em;
-  font-weight: bold;
-  outline: none;
-  padding: 0 15px;
+.user_card {
+  width: 380px;
+  height: 460px;
+  background: linear-gradient(114.99deg, #471CA9 -0.99%, #5736A3 54.28%, #4B2A99 78.99%);
+  box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
+  border-radius: 20px;
+  position: relative;
+  padding: 28px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user_card__logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.user_card__picture {
+  width: 308px;
+}
+
+.user_card__divider {
+  position: relative;
+  width: 100%;
+  height: 8px;
+  margin-top: 18px;
+  background: #EBD8FF;
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06), inset 0px -1.71846px 3.43693px #AE7BE3, inset 0px 3.43693px 2.5777px #FBF8FF;
+}
+
+.user_card__circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #EBD8FF;
+  box-shadow:  inset 0px -2.19582px 4.39163px #AE7BE3, inset 0px 4.39163px 3.29372px #FBF8FF;
+}
+
+.user_card__avatar {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  box-shadow: 0px -4.39163px 4.39163px rgba(0, 0, 0, 0.06);
+}
+
+.user_card__info {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;  
+  color: #EBD8FF;
+}
+
+.user_card__tweets {
+  margin-top: 62px;
+  margin-bottom: 0;
+}
+
+.user_card__followers {
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.user_card__btn {
+  width: 196px;
+  height: 50px;
+  background: #EBD8FF;
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
   text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;  
+  color: #373737;
+  border: none;
+  margin-top: 26px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  cursor: pointer;
+}
+.user_card__btn__followed {
+  background: #5CD3A8;
 }
 
-.del__btn:hover,
-.del__btn:focus {
-  background: #e20000;
-  color: #f2f3eb;
+.user_card__btn:hover,
+.user_card__btn:focus {
+  background: #c6c2cb;
+}
+.user_card__btn__followed:hover,
+.user_card__btn__followed:focus {
+  background: #97959b;
 }
